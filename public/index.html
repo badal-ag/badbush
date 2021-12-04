@@ -505,31 +505,29 @@
     </script>
 
     <!-- Adding Firebase Analytics to Track the Traction-->
-
-    <script>
+    <script type="module">
       // Import the functions you need from the SDKs you need
-      import { initializeApp } from "firebase/app";
-      import { getAnalytics } from "firebase/analytics";
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.0/firebase-app.js";
+      import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.6.0/firebase-analytics.js";
       // TODO: Add SDKs for Firebase products that you want to use
       // https://firebase.google.com/docs/web/setup#available-libraries
-
+    
       // Your web app's Firebase configuration
       // For Firebase JS SDK v7.20.0 and later, measurementId is optional
       const firebaseConfig = {
-          apiKey: "AIzaSyBhibSmIo1h9y3_9Y0vUN-3aki2sXHcfxM",
-          authDomain: "badbush-ab.firebaseapp.com",
-          projectId: "badbush-ab",
-          storageBucket: "badbush-ab.appspot.com",
-          messagingSenderId: "46194179464",
-          appId: "1:46194179464:web:30bcb7db26a0d3471e8e3d",
-          measurementId: "G-H7CFZD943M"
+        apiKey: "AIzaSyBhibSmIo1h9y3_9Y0vUN-3aki2sXHcfxM",
+        authDomain: "badbush-ab.firebaseapp.com",
+        projectId: "badbush-ab",
+        storageBucket: "badbush-ab.appspot.com",
+        messagingSenderId: "46194179464",
+        appId: "1:46194179464:web:30bcb7db26a0d3471e8e3d",
+        measurementId: "G-H7CFZD943M"
       };
-
+    
       // Initialize Firebase
       const app = initializeApp(firebaseConfig);
       const analytics = getAnalytics(app);
     </script>
-
     <!-- END PAGE LEVEL JAVASCRIPTS -->
 </body>
 <!-- END BODY -->
